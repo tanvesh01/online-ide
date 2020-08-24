@@ -8,11 +8,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-    res.json({
-        name: "Tanvesh",
-    });
-});
 const code = `#include <iostream>
                 using namespace std;
                 int main() {
