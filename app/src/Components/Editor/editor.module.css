@@ -1,0 +1,66 @@
+.code {
+    height: 93.9%;
+}
+.run {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #494d61;
+}
+
+.submit {
+    color: white;
+    border-radius: 0.4rem;
+    width: 5rem;
+    height: 2rem;
+    padding: 4px 7px;
+    background: linear-gradient(90deg, #5e81f4, #1c67da);
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.toogle {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin-right: 1rem;
+    padding: 0.8rem;
+    width: 11rem;
+    background-color: #373a4a;
+    justify-content: space-between;
+}
+
+.active {
+    color: white;
+    border-radius: 0.4rem;
+    padding: 2px 7px;
+    background: linear-gradient(90deg, #5e81f4, #1c67da);
+}
+.normal {
+    padding: 2px 7px;
+    border-radius: 0.4rem;
+    color: #aeb7e3;
+    background-color: #494d61;
+}
+
+.heading {
+    font-family: "Montserrat", sans-serif;
+    color: #aeb7e4;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: 0.8rem;
+        padding-left: 0.6rem;
+    }
+    .toogle {
+        margin-right: 0;
+        width: 10rem;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .submit {
+        width: 4rem;
+        height: 1.8rem;
+    }
+}

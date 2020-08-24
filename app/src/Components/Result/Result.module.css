@@ -1,0 +1,43 @@
+.item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.label {
+    font-family: "Montserrat", sans-serif;
+    color: #aeb7e4;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 1rem;
+    font-weight: 400;
+    background-color: #494d61;
+    width: 49.8%;
+}
+.input {
+    width: 50%;
+    font-size: 1.6rem;
+    height: 36%;
+    background-color: #494d6173;
+    padding: 1rem 0 0 1rem;
+    resize: none;
+    border: none;
+    color: aliceblue;
+}
+.show {
+    height: 6.4rem;
+    background: linear-gradient(90deg, #5e81f4, #1c67da);
+}
+@media screen and (max-width: 600px) {
+    .label {
+        width: 80.8%;
+    }
+    .input {
+        width: 81%;
+    }
+}
