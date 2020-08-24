@@ -1,5 +1,5 @@
 .code {
-    height: 93.9%;
+    height: 93.6%;
 }
 .run {
     display: flex;
@@ -17,6 +17,7 @@
     background: linear-gradient(90deg, #5e81f4, #1c67da);
     border: none;
     font-family: "Montserrat", sans-serif;
+    cursor: pointer;
 }
 
 .toogle {
@@ -24,12 +25,14 @@
     display: flex;
     margin-right: 1rem;
     padding: 0.8rem;
-    width: 11rem;
+    width: 12rem;
     background-color: #373a4a;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .active {
+    cursor: pointer;
     color: white;
     border-radius: 0.4rem;
     padding: 2px 7px;
@@ -58,6 +61,15 @@
         width: 10rem;
         padding: 0.7rem;
         font-size: 0.8rem;
+    }
+    /* .active {
+        margin-right: 1rem;
+    }
+    .normal {
+        margin-right: 1rem;
+    } */
+    .code {
+        height: 95.6%;
     }
     .submit {
         width: 4rem;

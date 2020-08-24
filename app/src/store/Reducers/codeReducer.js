@@ -1,4 +1,4 @@
-import { INPUT_CHANGE, OUTPUT_CHANGE } from "../Actions/codeActionTypes";
+import { INPUT_CHANGE, OUTPUT_CHANGE, SUBMITTING } from "../Actions/codeActionTypes";
 const initState = {
     input: null,
     output: null,
@@ -15,6 +15,11 @@ const reducer = (state = initState, actions) => {
             return {
                 ...state,
                 output: actions.output,
+            };
+        case SUBMITTING:
+            return {
+                ...state,
+                output: "Compiling....",
             };
         default:
             return state;

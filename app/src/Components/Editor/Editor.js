@@ -1,23 +1,16 @@
 import { Controlled as CodeMirror } from "react-codemirror2";
 import React, { Component } from "react";
+import { outputChange, submitting } from "../../store/Actions/codeActions";
 import { connect } from "react-redux";
 import axios from "axios";
-import { outputChange } from "../../store/Actions/codeActions";
 import classes from "./editor.module.css";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
-import "./cobalt.css";
 import "codemirror/theme/dracula.css";
 require("codemirror/mode/clike/clike");
 require("codemirror/mode/python/python");
 
 class Editor extends Component {
-    // headers = {
-    //     "Access-Control-Allow-Credentials": true,
-    // };
-    // #1 Get input boxes working and take values and send to server
-    // #2 build the design
-    // #3
     state = {
         lang: "cpp17",
         mode: "clike",
@@ -33,6 +26,7 @@ int main() {
         `,
     };
     submitHandler = () => {
+        this.props.submitting();
         const x = {
             code: this.state.value,
             input: this.props.input,
@@ -122,6 +116,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         outputChange: (output) => dispatch(outputChange(output)),
+        submitting: () => dispatch(submitting()),
     };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Editor);

@@ -9,7 +9,8 @@
         "start": "node server.js",
         "server": "nodemon server.js",
         "app": "npm start --prefix app",
-        "dev": "concurrently \"npm run server\" \"npm run app\""
+        "dev": "concurrently \"npm run server\" \"npm run app\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
     },
     "author": "Tanvesh Sarve",
     "license": "MIT",

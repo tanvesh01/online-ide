@@ -1,4 +1,4 @@
-import { INPUT_CHANGE, OUTPUT_CHANGE } from "./codeActionTypes";
+import { INPUT_CHANGE, OUTPUT_CHANGE, SUBMITTING } from "./codeActionTypes";
 export const inputChange = (input) => {
     return {
         type: INPUT_CHANGE,
@@ -11,18 +11,9 @@ export const outputChange = (output) => {
         output: output,
     };
 };
-// export const submitCode = () => {
-//     return (dispatch) => {
-//         // loading
-//         axios
-//             .post("/", item)
-//             .then((res) => {
-//                 console.log(res.data);
-//                 dispatch(outputChange(res.data.output));
-//             })
-//             .catch((err) => {
-//                 console.log(err);
-//                 // dispatch(returnErrors(err.response.data, err.response.status));
-//             });
-//     };
-// };
+
+export const submitting = () => {
+    return {
+        type: SUBMITTING,
+    };
+};
