@@ -1,0 +1,23 @@
+{
+    "name": "code-editor",
+    "version": "1.0.0",
+    "description": "code-editor for placement saga",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix app",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "app": "npm start --prefix app",
+        "dev": "concurrently \"npm run server\" \"npm run app\""
+    },
+    "author": "Tanvesh Sarve",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.20.0",
+        "body-parser": "^1.19.0",
+        "concurrently": "^5.3.0",
+        "express": "^4.17.1",
+        "request": "^2.88.2"
+    }
+}
