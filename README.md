@@ -1,4 +1,4 @@
-# Welcome to StackEdit!
+# Welcome!
 
 **This is an online ide for the compilation of C++17, Java, and Python. Built with React, Express, and Node.**
 
