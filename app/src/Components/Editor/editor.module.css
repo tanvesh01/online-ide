@@ -1,3 +1,9 @@
+/* .down {
+    position: fixed;
+    color: white;
+    z-index: 2;
+} */
+
 .code {
     height: 93.6%;
 }

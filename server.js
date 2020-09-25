@@ -27,8 +27,8 @@ app.post("/", (req, res) => {
         stdin: req.body.input,
         language: req.body.lang,
         versionIndex: "0",
-        clientId: "fee2de3b42f120724094739513b6afd2",
-        clientSecret: "883fdcb1100f3de46c32465c44df3cc06018942cdcbd707d6a6b826c08e5589a",
+        clientId: "YOUR_CLIENT_ID",
+        clientSecret: "YOUR_CLIENT_SECRET",
     };
     request(
         {
