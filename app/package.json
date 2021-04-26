@@ -37,7 +37,7 @@
         ]
     },
     "devDependencies": {
-        "@types/codemirror": "0.0.97"
+        "@types/codemirror": "0.0.109"
     },
     "proxy": "http://localhost:5000/"
 }
